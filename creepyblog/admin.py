@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import reverse
 from django.utils.html import format_html
 
-from .models import Post, Comment
+from .models import Comment, Post
 
 
 @admin.register(Post)

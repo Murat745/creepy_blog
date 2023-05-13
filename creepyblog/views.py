@@ -13,7 +13,7 @@ from django.urls import reverse, reverse_lazy
 from django.views import generic
 
 from .forms import ContactUsForm
-from .models import Post, BlogUser, Comment
+from .models import BlogUser, Comment, Post
 from .tasks import send_mail as celery_send_mail
 
 User = get_user_model()
@@ -51,7 +51,6 @@ class UpdateProfile(LoginRequiredMixin, SuccessMessageMixin, generic.UpdateView)
             if avatar.size > 1000000:
                 form.add_error('avatar', 'Avatar file size cannot exceed 1 Mb.')
                 return self.form_invalid(form)
-
 
         if form.cleaned_data.get('email'):
             form.instance.user.email = form.cleaned_data.get('email')
@@ -111,8 +110,6 @@ class CreatePostView(LoginRequiredMixin, SuccessMessageMixin, generic.CreateView
             if image.size > 3000000:
                 form.add_error('image', 'Image file size cannot exceed 3 Mbs.')
                 return self.form_invalid(form)
-
-
 
         text = form.cleaned_data.get('text')
         if text:
