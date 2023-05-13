@@ -1,6 +1,6 @@
 from .base_settings import *
 
-SECRET_KEY = 'test_key745'
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 DEBUG = True
 
@@ -12,7 +12,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'debug_toolbar',
+
     'creepyblog',
 
 ]

@@ -1,0 +1,11 @@
+table tr td {
+padding: 10px;
+}
+
+.form-group *{
+    width: 100%;
+}
+
+.btn-success{
+    margin-bottom: 15px;
+}
