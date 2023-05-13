@@ -1,0 +1,11 @@
+.btn-secondary {
+margin-top: 10px;
+}
+
+.form-group *{
+    width: 100%;
+}
+
+.btn-success{
+    margin-bottom: 15px;
+}

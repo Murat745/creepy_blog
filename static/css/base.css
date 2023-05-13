@@ -1,0 +1,30 @@
+.navbar-brand img {
+width: 70px;
+height: auto;
+}
+
+#all-content {
+min-height: 100vh;
+margin-bottom: 100px;
+}
+
+footer {
+position: relative;
+bottom: 0;
+height: 70px;
+background-color: #5c55af;
+color: white;
+}
+
+.btn-link {
+color: white;
+}
+
+.btn-link:hover {
+color: white;
+}
+
+.modal-content form .form-group {
+padding: 10px;
+margin: 0 0 15px;
+}
