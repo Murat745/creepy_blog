@@ -1,5 +1,5 @@
-from creepyblog.views import CreatePostView, PostDetailView, PostListView, UpdatePostView, \
-    CreateCommentView, RegisterFormView, UpdateProfile, UserProfile, contact_us
+from creepyblog.views import CreateCommentView, CreatePostView, PostDetailView, PostListView, RegisterFormView, \
+    UpdatePostView, UpdateProfile, UserProfile, contact_us
 
 from django.conf import settings
 from django.conf.urls.static import static
